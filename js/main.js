@@ -26,6 +26,10 @@ function changeBGImage() {
 
 	// bug fix #2 should go here. it's at most 3 lines of JS code.
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
+	puzzlePieces.style.backgroundImage = `url(images/bottomLeft${this.id}.jpg)`;
+	puzzlePieces.style.backgroundImage = `url(images/bottomRight${this.id}.jpg)`;
+	puzzlePieces.style.backgroundImage = `url(images/topLeft${this.id}.jpg)`;
+	puzzlePieces.style.backgroundImage = `url(images/topRight${this.id}.jpg)`;
 }
 
 function handleStartDrag() { 
@@ -45,7 +49,7 @@ function handleDrop(e) {
 	e.preventDefault();
 	console.log('dropped something on me');
 	// bug fix #1 should go here, and it's at most 3 lines of JS code
-
+	
 	// this line is going to move the dragged piece from the left side of the board
 	// into whatever drop zone we choose. appendChild means "add element to the container"
 	this.appendChild(draggedPiece);
