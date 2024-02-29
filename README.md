@@ -1,18 +1,10 @@
-# Drag and Drop Reference
+# Crushing Bugs Plan
 
-TODO: Write a project description
+## Bug 1
 
-## Contributing
+Currently multiple pieces can be placeed on top of each other.
+We can fix this by adding a rule to the function makes it so an occupied space cannot have a piece put on it.
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+## Bug 2
 
-## Credits
-
-TODO: Write credits
-
-## License
-MIT
+Pieces do not reset on changing to a new puzzle, and don't change to the pieces for that image
